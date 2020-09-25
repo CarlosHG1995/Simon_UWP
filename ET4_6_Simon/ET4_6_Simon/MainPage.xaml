@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ET4_6_Simon.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"
+                    Android="2,5,5,5"
+                    WinPhone="4,4,4,4"/>
+    </ContentPage.Padding>
+    
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button x:Name="Empezar" Text="Jugar" Font="Large" VerticalOptions="Center" Clicked="Empezar_Clicked"/>
+        <BoxView x:Name="bView0" VerticalOptions="FillAndExpand" BackgroundColor="Aqua" CornerRadius="20">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        <BoxView x:Name="bView1" VerticalOptions="FillAndExpand" BackgroundColor="Aqua" CornerRadius="20">
+            
+        </BoxView>
+
+        <BoxView x:Name="bView2" VerticalOptions="FillAndExpand" BackgroundColor="Aqua" CornerRadius="20">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        <BoxView x:Name="bView3" VerticalOptions="FillAndExpand" BackgroundColor="Aqua" CornerRadius="20">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+    </StackLayout>
+
+</ContentPage>
